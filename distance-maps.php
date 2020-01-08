@@ -13,7 +13,7 @@ $lon2 = $lon2 * 3.14159265358979323846 /180;
 $dist = 6372.795477598 * acos(sin($lat1) * sin($lat2) + cos($lat1) * cos($lat2) * cos($lon1-$lon2));        
 
 	if ($u=="m") {
-		$dist = $dist * 1000;
+	$dist = $dist * 1000;
 	}
 	
 return round($dist,3);
